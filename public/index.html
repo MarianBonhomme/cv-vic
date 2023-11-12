@@ -3,13 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Portfolio - Victoria Carobbi</title>
+    <title>Victoria Carobbi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Bienvenue sur mon site Web. Ici tu trouveras toutes les informations me concernant : mon parcours professionnel, mes formations et mes passions."/>
+	<meta name="robots" content="index">
+	<meta property="og:site_name" content="Victoria Carobbi">
+	<meta property="og:type" content="Website">
+	<meta property="og:title" content="Victoria Carobbi - Portfolio">
+	<meta property="og:description" content="Bienvenue sur mon site Web. Ici tu trouveras toutes les informations me concernant : mon parcours professionnel, mes formations et mes passions.">
+	<meta property="og:image" content="https://victoriacarobbi.netlify.app/assets/images/vic.png">
+	<meta property="og:url" content="https://victoriacarobbi.netlify.app/">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/output.css" />
-	<link rel="icon" href="/favicon.png" type="image/x-icon">
+	<link rel="icon" href="../favicon.png" type="image/png">
 	<script src="assets/scripts/resume.js"></script>
 	<script src="assets/scripts/scroll.js"></script>
 	<script src="assets/scripts/menuMobile.js"></script>
@@ -26,10 +34,10 @@
 		<!-- content -->
 		<div class="basis-7/12 min-h-max flex flex-col justify-center items-center pb-10 lg:pb-0 pl-3 sm:pl-0 z-10">
 			<div>
-				<h1 class="text-8xl sm:text-9xl font-bold mb-[15px]">
+				<span class="text-8xl sm:text-9xl font-bold mb-[15px]">
 					Hello<span class="text-green-500">.</span>
-				</h1>
-				<h3 class="text-4xl sm:text-5xl flex items-center mb-[15px]"><span class="h-[2px] w-10 bg-green-500 mr-3"></span>Je suis Victoria Carobbi</h3>
+				</span>
+				<h1 class="text-4xl sm:text-5xl flex items-center mb-[15px]"><span class="h-[2px] w-10 bg-green-500 mr-3"></span>Je suis Victoria Carobbi</h1>
 				<p class="text-lg sm:text-xl mb-[15px]">Ingénieur d'affaire sportive</p>
 				<a href="assets/files/cv-victoria-carobbi.pdf" download="cv-victoria-carobbi.pdf" target="_blank">
 					<button class="flex items-center bg-green-500 py-3 px-6 w-max"><img src="assets/icons/download-white.png" alt="download" class="w-3 mr-2">Mon CV</button>
@@ -63,7 +71,7 @@
 		<!-- nav bar -->
 		<div id="navbar" class="w-full fixed top-0 left-0 flex justify-between items-center z-50 py-5 px-5 lg:px-20">
 			<div class="flex justify-start">
-				<h2 class="text-3xl sm:text-5xl flex items-center"><img src="assets/icons/rose.png" alt="logo" class="w-6 sm:w-10 mr-3 sm:mr-5">Portfolio</h2>
+				<h2 class="text-3xl sm:text-5xl flex items-center"><img src="assets/icons/turtle.png" alt="logo" class="w-6 sm:w-10 mr-3 sm:mr-5">Portfolio</h2>
 			</div>
 			<div class="hidden lg:flex justify-end">
 				<ul class="flex">
@@ -83,7 +91,7 @@
 		<div id="menu-mobile" class="fixed top-0 left-0 w-screen h-screen overflow-hidden z-50 bg-darklight translate-x-full">
 			<div class="w-full flex justify-between items-center py-5 px-5 lg:px-20">
 				<div class="flex justify-start">
-					<h2 class="text-3xl sm:text-5xl flex items-center"><img src="assets/icons/rose.png" alt="logo" class="w-6 sm:w-10 mr-3 sm:mr-5">Portfolio</h2>
+					<h2 class="text-3xl sm:text-5xl flex items-center"><img src="assets/icons/turtle.png" alt="logo" class="w-6 sm:w-10 mr-3 sm:mr-5">Portfolio</h2>
 				</div>
 				<div class="flex justify-end">
 					<img id="close-menu-button" src="assets/icons/close.svg" alt="close" class="w-6 sm:w-8">
@@ -105,14 +113,14 @@
 	<div id="about" class="py-10 sm:py-20 flex flex-col items-center">
 		<div class="w-full flex justify-center relative mb-10 sm:mb-16">
 			<h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">ABOUT</h3>
-			<span class=" absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">QUI SUIS-JE?</span>
+			<h3 class=" absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">QUI SUIS-JE?</h3>
 		</div>
 		<div class="w-full lg:flex justify-evenly items-center">
 			<div class="hidden lg:block w-4/12 max-w-xl">
 				<img src="assets/images/vic-about.png" alt="" class="w-full grayscale">
 			</div>
 			<div class="w-full lg:w-7/12 max-w-4xl px-3 sm:px-10 lg:px-0">
-				<h3 class="text-3xl">À propos de moi</h3>
+				<h4 class="text-3xl">À propos de moi</h4>
 				<span class="block h-[2px] w-10 bg-green-500 mt-3 mb-[15px]"></span>
 				<p class="text-justify text-gray-500 mb-[15px]">
 					Moi c'est Victoria, je suis actuellement en deuxième année de Master Management du Sport à Montpellier. A la suite de ce diplôme, je souhaite m'orienter vers le 
@@ -176,7 +184,7 @@
 	<div id="resume" class="py-10 sm:py-20">
 		<div class="w-full flex justify-center relative mb-10 sm:mb-16">
 			<h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">RESUME</h3>
-			<span class=" absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">PARCOURS</span>
+			<h3 class=" absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">PARCOURS</h3>
 		</div>
 		
 		<div class="w-full flex justify-center items-center mb-[15px]">
@@ -473,7 +481,7 @@
 	<div id="skills" class="py-10 sm:py-20">
 		<div class="w-full flex justify-center relative mb-10 sm:mb-16">
 			<h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">SKILLS</h3>
-			<span class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">COMPETENCES</span>
+			<h3 class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">COMPETENCES</h3>
 		</div>
 		<div class="max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-3 sm:px-10">
 			<div class="relative bg-darklight flex flex-col text-center p-6">
@@ -544,7 +552,7 @@
 <div id="hobbies" class="py-10 mb-10 lg:mb-0  sm:py-20 flex flex-col items-center">
 	<div class="w-full flex justify-center relative mb-10 sm:mb-16">
 		<h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">HOBBIES</h3>
-		<span class=" absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">MES PASSIONS</span>
+		<h3 class=" absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">MES PASSIONS</h3>
 	</div>
 	<div class="max-w-lg lg:max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-20 px-3 sm:px-10">
 		<div class="group relative">
@@ -576,7 +584,7 @@
 <div id="contact" class="w-full py-10 sm:py-20">
 	<div class="w-full flex justify-center relative mb-10 sm:mb-16 overflow-hidden">
 		<h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">CONTACT</h3>
-		<span class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">CONTACTEZ-MOI</span>
+		<h3 class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">CONTACTEZ-MOI</h3>
 	</div>
 	<div class="flex flex-col lg:flex-row justify-evenly items-center">
 		<div class="w-full lg:w-5/12 flex justify-center lg:justify-end mb-20 lg:mb-0 px-3">
