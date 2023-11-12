@@ -6,6 +6,9 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
+* {
+	transition: all 0.2s ease-in-out;
+}
 
 *,
 ::before,
@@ -769,6 +772,10 @@ video {
   width: 2px;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -785,14 +792,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.min-w-\[90\%\] {
-  min-width: 90%;
 }
 
 .min-w-fit {
@@ -818,10 +817,6 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.basis-5\/12 {
-  flex-basis: 41.666667%;
 }
 
 .basis-7\/12 {
@@ -850,8 +845,8 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -880,10 +875,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .justify-evenly {
@@ -1512,10 +1503,6 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1541,11 +1528,6 @@ video {
     padding-right: 0px;
   }
 
-  .lg\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1558,14 +1540,6 @@ video {
   .lg\:grayscale {
     --tw-grayscale: grayscale(100%);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
-  .group:hover .lg\:group-hover\:-bottom-12 {
-    bottom: -3rem;
-  }
-
-  .group:hover .lg\:group-hover\:-left-2 {
-    left: -0.5rem;
   }
 
   .group:hover .lg\:group-hover\:-bottom-10 {
