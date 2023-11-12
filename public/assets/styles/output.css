@@ -6,9 +6,6 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
-* {
-	transition: all 0.2s ease-in-out;
-}
 
 *,
 ::before,
@@ -727,6 +724,10 @@ video {
   max-height: min-content;
 }
 
+.max-h-full {
+  max-height: 100%;
+}
+
 .min-h-max {
   min-height: -moz-max-content;
   min-height: max-content;
@@ -794,13 +795,16 @@ video {
   width: 100vw;
 }
 
-.min-w-fit {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+.min-w-\[200\%\] {
+  min-width: 200%;
 }
 
 .min-w-full {
   min-width: 100%;
+}
+
+.min-w-\[150\%\] {
+  min-width: 150%;
 }
 
 .max-w-4xl {
@@ -817,6 +821,10 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-\[150\%\] {
+  max-width: 150%;
 }
 
 .basis-7\/12 {
