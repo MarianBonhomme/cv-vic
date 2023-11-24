@@ -7,5 +7,5 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         loader.style.display = 'none';
         content.style.display = 'block';
-    }, 5000);
+    }, 2600);
 });
