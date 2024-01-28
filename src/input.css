@@ -19,14 +19,14 @@
 
 /* hide scrollbar */
 body {
-  scrollbar-width: thin;
+  scrollbar-width: thin !important;
 }
 body::-webkit-scrollbar {
-  width: 0em;
+  width: 0em !important;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 body::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: transparent !important;
 }
