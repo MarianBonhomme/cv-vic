@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	function preloadImages() {
 		const images = [
+			'../assets/loader.gif',
 			'../assets/images/vic.webp',
 			'../assets/images/vic-about.webp',
 			'../assets/images/trip.webp',
