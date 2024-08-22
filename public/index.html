@@ -1,684 +1,1482 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Victoria Carobbi - Ingénieur d'Affaires Sportives</title>
-	<meta name="description" content="Bienvenue sur mon site Web. Ici tu trouveras toutes les informations me concernant : mon parcours professionnel, mes formations et mes passions."/>
-	<meta name="robots" content="index">
-	<meta name="google-site-verification" content="84eqGXX4iAQDeRClNdPFyK8UrxPWdPaJeW1UJhVQ9Q8" />
-	<meta property="og:site_name" content="Victoria Carobbi - Ingénieur d'Affaires Sportives">
-	<meta property="og:type" content="Website">
-	<meta property="og:title" content="Victoria Carobbi - Ingénieur d'Affaires Sportives">
-	<meta property="og:description" content="Bienvenue sur mon site Web. Ici tu trouveras toutes les informations me concernant : mon parcours professionnel, mes formations et mes passions.">
-	<meta property="og:image" content="https://victoriacarobbi.fr/assets/images/vic.png">
-	<meta property="og:url" content="https://victoriacarobbi.fr/">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="assets/styles/output.css" />
-	<link rel="icon" href="./assets/favicon.png" type="image/png">
-	<link rel="preload" href="/assets/loader.gif" as="image">
-	<link rel="preload" href="/assets/images/vic.webp" as="image">
-
+    <meta
+      name="description"
+      content="Bienvenue sur mon site Web. Ici tu trouveras toutes les informations me concernant : mon parcours professionnel, mes formations et mes passions."
+    />
+    <meta name="robots" content="index" />
+    <meta
+      name="google-site-verification"
+      content="84eqGXX4iAQDeRClNdPFyK8UrxPWdPaJeW1UJhVQ9Q8"
+    />
+    <meta
+      property="og:site_name"
+      content="Victoria Carobbi - Ingénieur d'Affaires Sportives"
+    />
+    <meta property="og:type" content="Website" />
+    <meta
+      property="og:title"
+      content="Victoria Carobbi - Ingénieur d'Affaires Sportives"
+    />
+    <meta
+      property="og:description"
+      content="Bienvenue sur mon site Web. Ici tu trouveras toutes les informations me concernant : mon parcours professionnel, mes formations et mes passions."
+    />
+    <meta
+      property="og:image"
+      content="https://victoriacarobbi.fr/assets/images/vic.png"
+    />
+    <meta property="og:url" content="https://victoriacarobbi.fr/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/styles/output.css" />
+    <link rel="icon" href="./assets/favicon.png" type="image/png" />
+    <link rel="preload" href="/assets/loader.gif" as="image" />
+    <link rel="preload" href="/assets/images/vic.webp" as="image" />
   </head>
 
-  <body class="bg-dark text-white font-poppins flex flex-col items-center overflow-x-hidden w-screen select-none">
+  <body
+    class="bg-dark text-white font-poppins flex flex-col items-center overflow-x-hidden w-screen select-none"
+  >
+    <div id="loader" class="loader-wrapper flex bg-dark">
+      <img src="assets/loader.gif" alt="Chargement en cours" />
+    </div>
 
-	<div id="loader" class="loader-wrapper flex bg-dark">
-    <img src="assets/loader.gif" alt="Chargement en cours">
-  </div>
+    <div id="content" class="flex flex-col items-center w-screen">
+      <!-- ===== headline ===== -->
+      <div
+        id="home"
+        class="min-h-screen relative flex flex-col lg:flex-row justify-center sm:justify-end"
+      >
+        <!-- content -->
+        <div
+          class="basis-7/12 min-h-max flex flex-col justify-center items-center pb-10 lg:pb-0 pl-3 sm:pl-0 z-10"
+        >
+          <div>
+            <span class="text-8xl sm:text-9xl font-bold mb-[15px]">
+              Hello<span class="text-green-500">.</span>
+            </span>
+            <h1 class="text-4xl sm:text-5xl flex items-center mb-[15px]">
+              <span class="h-[2px] w-10 bg-green-500 mr-3"></span>Je suis
+              Victoria Carobbi
+            </h1>
+            <p class="text-lg sm:text-xl mb-[15px]">
+              Ingénieur d'affaire sportive
+            </p>
+            <a
+              href="assets/files/cv-victoria-carobbi.pdf"
+              download="cv-victoria-carobbi.pdf"
+              target="_blank"
+            >
+              <button class="flex items-center bg-green-500 py-3 px-6 w-max">
+                <img
+                  src="assets/icons/download-white.png"
+                  alt="download"
+                  class="w-3 mr-2"
+                />Mon CV
+              </button>
+            </a>
+          </div>
+        </div>
+        <div
+          class="hidden sm:flex lg:basis-4/12 xl:basis-5/12 min-h-max justify-end lg:justify-center items-end xl:items-center"
+        >
+          <img
+            src="assets/images/woman.png"
+            alt="victoria"
+            class="w-3/4 lg:w-full xl:mt-10 grayscale"
+          />
+        </div>
+        <div class="sm:hidden absolute bottom-0 z-0 overflow-hidden">
+          <img
+            src="assets/images/woman.png"
+            alt="victoria"
+            class="h-screen w-fit max-w-[150%] grayscale opacity-25 translate-x-10"
+          />
+        </div>
+        <!-- social medias -->
+        <div
+          class="h-full absolute top-0 left-0 hidden lg:flex justify-center items-center"
+        >
+          <div class="bg-dark z-10 py-3">
+            <a
+              href="https://fr.linkedin.com/in/victoria-carobbi-772a261b1"
+              target="_blank"
+            >
+              <div
+                class="group flex justify-center items-center cursor-pointer p-5"
+              >
+                <img
+                  src="assets/icons/linkedin-gray.svg"
+                  alt="linkedin"
+                  class="absolute w-5 opacity-100 group-hover:opacity-0"
+                />
+                <img
+                  src="assets/icons/linkedin-green.svg"
+                  alt="linkedin"
+                  class="absolute w-5 opacity-0 group-hover:opacity-100"
+                />
+              </div>
+            </a>
+            <a href="https://www.instagram.com/victoria.crb/" target="_blank">
+              <div
+                class="group flex justify-center items-center cursor-pointer p-5"
+              >
+                <img
+                  src="assets/icons/instagram-gray.svg"
+                  alt="instagram"
+                  class="absolute w-5 opacity-100 group-hover:opacity-0"
+                />
+                <img
+                  src="assets/icons/instagram-green.svg"
+                  alt="instagram"
+                  class="absolute w-5 opacity-0 group-hover:opacity-100"
+                />
+              </div>
+            </a>
+          </div>
+          <span class="absolute h-5/6 w-[2px] bg-gray-500"></span>
+        </div>
+        <!-- nav bar -->
+        <div
+          id="navbar"
+          class="w-full fixed top-0 left-0 flex justify-between items-center z-50 py-5 px-5 lg:px-20"
+        >
+          <div class="flex justify-start">
+            <h2 class="text-3xl sm:text-5xl flex items-center">
+              <img
+                src="assets/icons/turtle.png"
+                alt="logo"
+                class="w-6 sm:w-10 mr-3 sm:mr-5"
+              />Portfolio
+            </h2>
+          </div>
+          <div class="hidden lg:flex justify-end">
+            <ul class="flex">
+              <li
+                class="hover:text-green-500 p-3 cursor-pointer"
+                data-value="home"
+              >
+                Accueil
+              </li>
+              <li
+                class="hover:text-green-500 p-3 cursor-pointer"
+                data-value="about"
+              >
+                À propos
+              </li>
+              <li
+                class="hover:text-green-500 p-3 cursor-pointer"
+                data-value="resume"
+              >
+                Parcours
+              </li>
+              <li
+                class="hover:text-green-500 p-3 cursor-pointer"
+                data-value="skills"
+              >
+                Compétences
+              </li>
+              <li
+                class="hover:text-green-500 p-3 cursor-pointer"
+                data-value="hobbies"
+              >
+                Passions
+              </li>
+              <li
+                class="hover:text-green-500 p-3 cursor-pointer"
+                data-value="contact"
+              >
+                Contact
+              </li>
+            </ul>
+          </div>
+          <div class="flex lg:hidden justify-end">
+            <img
+              id="open-menu-button"
+              src="assets/icons/menu-burger.svg"
+              alt="menu"
+              class="w-6 sm:w-8"
+            />
+          </div>
+        </div>
+        <!-- menu mobile -->
+        <div
+          id="menu-mobile"
+          class="fixed top-0 left-0 w-screen h-screen overflow-hidden z-50 bg-darklight translate-x-full"
+        >
+          <div
+            class="w-full flex justify-between items-center py-5 px-5 lg:px-20"
+          >
+            <div class="flex justify-start">
+              <h2 class="text-3xl sm:text-5xl flex items-center">
+                <img
+                  src="assets/icons/turtle.png"
+                  alt="logo"
+                  class="w-6 sm:w-10 mr-3 sm:mr-5"
+                />Portfolio
+              </h2>
+            </div>
+            <div class="flex justify-end">
+              <img
+                id="close-menu-button"
+                src="assets/icons/close.svg"
+                alt="close"
+                class="w-6 sm:w-8"
+              />
+            </div>
+          </div>
+          <ul id="navbar-mobile" class="p-10 sm:p-20 text-2xl sm:text-4xl">
+            <li
+              class="flex items-center p-3 sm:p-5 cursor-pointer"
+              data-value="home"
+            >
+              <img
+                src="assets/icons/home.svg"
+                alt="home"
+                class="w-6 sm:w-10 mr-6 sm:mr-10"
+              />Accueil
+            </li>
+            <li
+              class="flex items-center p-3 sm:p-5 cursor-pointer"
+              data-value="about"
+            >
+              <img
+                src="assets/icons/user-white.png"
+                alt="about"
+                class="w-6 sm:w-10 mr-6 sm:mr-10"
+              />À propos
+            </li>
+            <li
+              class="flex items-center p-3 sm:p-5 cursor-pointer"
+              data-value="resume"
+            >
+              <img
+                src="assets/icons/suitcase.png"
+                alt="resume"
+                class="w-6 sm:w-10 mr-6 sm:mr-10"
+              />Parcours
+            </li>
+            <li
+              class="flex items-center p-3 sm:p-5 cursor-pointer"
+              data-value="skills"
+            >
+              <img
+                src="assets/icons/brain.png"
+                alt="skills"
+                class="w-6 sm:w-10 mr-6 sm:mr-10"
+              />Compétences
+            </li>
+            <li
+              class="flex items-center p-3 sm:p-5 cursor-pointer"
+              data-value="hobbies"
+            >
+              <img
+                src="assets/icons/run.png"
+                alt="hobbies"
+                class="w-6 sm:w-10 mr-6 sm:mr-10"
+              />Passions
+            </li>
+            <li
+              class="flex items-center p-3 sm:p-5 cursor-pointer"
+              data-value="contact"
+            >
+              <img
+                src="assets/icons/send-white.png"
+                alt="contact section"
+                class="w-6 sm:w-10 mr-6 sm:mr-10"
+              />Contact
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ===== headline ===== -->
 
-	<div id="content" class="flex flex-col items-center w-screen">
+      <!-- ===== about ===== -->
+      <div id="about" class="py-10 sm:py-20 flex flex-col items-center">
+        <div class="w-full flex justify-center relative mb-10 sm:mb-16">
+          <h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">
+            ABOUT
+          </h3>
+          <h3
+            class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3"
+          >
+            QUI SUIS-JE?
+          </h3>
+        </div>
+        <div class="w-full lg:flex justify-evenly items-center">
+          <div class="hidden lg:block w-4/12 max-w-xl">
+            <img
+              src="assets/images/vic-about.webp"
+              alt=""
+              class="w-full grayscale"
+            />
+          </div>
+          <div class="w-full lg:w-7/12 max-w-4xl px-3 sm:px-10 lg:px-0">
+            <h4 class="text-3xl">À propos de moi</h4>
+            <span class="block h-[2px] w-10 bg-green-500 mt-3 mb-[15px]"></span>
+            <p class="text-justify text-gray-500 mb-[15px]">
+              Moi c'est Victoria, je suis actuellement en deuxième année de
+              Master Management du Sport à Montpellier. À la suite de ce
+              diplôme, je souhaite m'orienter vers l'aspect pratique du sport en
+              intégrant une formation BPJEPS AF - option Haltérophilie et
+              Musculation. Étant moi-même passionnée par le sport, mon ambition
+              est de mettre à profit mes connaissances pour contribuer à la
+              réalisation de vos objectifs sportifs.
+            </p>
+            <p class="text-justify text-gray-500 mb-[15px]">
+              Pratiquant du Street Workout en compétition, je suis une personne
+              déterminée, disciplinée et passionnée par ce que j'entreprends.
+              Grâce à toutes mes expériences professionnelles et personnelles,
+              j'ai appris à toujours avancer pour repousser mes limites.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-[15px]">
+              <div
+                class="about-item flex justify-between items-center bg-darklight py-3 px-4 md:px-6 border-s-4 border-darklight hover:border-green-500 cursor-copy"
+              >
+                <div class="max-h-min">
+                  <h4 class="text-xl mb-1">Nom</h4>
+                  <span
+                    class="text-gray-500 text-sm flex items-center cursor-pointer"
+                    ><img
+                      src="assets/icons/copy.png"
+                      alt="copy"
+                      class="w-3 mr-2"
+                    />Victoria Carobbi</span
+                  >
+                </div>
+                <img src="assets/icons/user.png" alt="" class="h-6" />
+              </div>
+              <div
+                class="about-item flex justify-between items-center bg-darklight py-3 px-4 md:px-6 border-s-4 border-darklight hover:border-green-500 cursor-copy"
+              >
+                <div class="max-h-min">
+                  <h4 class="text-xl mb-1">Email</h4>
+                  <span
+                    class="text-gray-500 text-sm flex items-center cursor-pointer"
+                    ><img
+                      src="assets/icons/copy.png"
+                      alt="copy"
+                      class="w-3 mr-2"
+                    />victoriacarobbi@gmail.com</span
+                  >
+                </div>
+                <img src="assets/icons/email.png" alt="" class="h-6" />
+              </div>
+              <div
+                class="about-item flex justify-between items-center bg-darklight py-3 px-4 md:px-6 border-s-4 border-darklight hover:border-green-500 cursor-copy"
+              >
+                <div class="max-h-min">
+                  <h4 class="text-xl mb-1">Téléphone</h4>
+                  <span
+                    class="text-gray-500 text-sm flex items-center cursor-pointer"
+                    ><img
+                      src="assets/icons/copy.png"
+                      alt="copy"
+                      class="w-3 mr-2"
+                    />06 30 56 78 76</span
+                  >
+                </div>
+                <img src="assets/icons/phone.png" alt="" class="h-6" />
+              </div>
+              <div
+                class="about-item flex justify-between items-center bg-darklight py-3 px-4 md:px-6 border-s-4 border-darklight hover:border-green-500 cursor-copy"
+              >
+                <div class="max-h-min">
+                  <h4 class="text-xl mb-1">Localisation</h4>
+                  <span
+                    class="text-gray-500 text-sm flex items-center cursor-pointer"
+                    ><img
+                      src="assets/icons/copy.png"
+                      alt="copy"
+                      class="w-3 mr-2"
+                    />Montpellier</span
+                  >
+                </div>
+                <img src="assets/icons/gps.png" alt="" class="h-6" />
+              </div>
+            </div>
+            <div class="sm:flex">
+              <a
+                href="assets/files/cv-victoria-carobbi.pdf"
+                download="cv-victoria-carobbi.pdf"
+                target="_blank"
+              >
+                <button
+                  class="group flex items-center bg-green-500 hover:bg-dark hover:text-green-500 border-solid border-2 border-green-500 py-3 px-6 w-max sm:mr-[15px] mb-3 sm:mb-0"
+                >
+                  <img
+                    src="assets/icons/download-white.png"
+                    alt="download"
+                    class="absolute w-3 mr-2 opacity-100 group-hover:opacity-0"
+                  />
+                  <img
+                    src="assets/icons/download-green.png"
+                    alt="download"
+                    class="w-3 mr-2 font-opacity-0 group-hover:opacity-100"
+                  />
+                  Téléchargez mon CV
+                </button>
+              </a>
+              <button
+                id="contact-button"
+                class="group flex items-center text-green-500 hover:bg-green-500 hover:text-white border-solid border-2 border-green-500 py-3 px-6 w-max"
+              >
+                <img
+                  src="assets/icons/send-green.png"
+                  alt="send"
+                  class="absolute w-3 mr-2 opacity-100 group-hover:opacity-0"
+                />
+                <img
+                  src="assets/icons/send-white.png"
+                  alt="send"
+                  class="w-3 mr-2 font-opacity-0 group-hover:opacity-100"
+                />
+                Contactez-moi
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ===== about ===== -->
 
-	<!-- ===== headline ===== -->
-		<div id="home" class="min-h-screen relative flex flex-col lg:flex-row justify-center sm:justify-end">		
-			<!-- content -->
-			<div class="basis-7/12 min-h-max flex flex-col justify-center items-center pb-10 lg:pb-0 pl-3 sm:pl-0 z-10">
-				<div>
-					<span class="text-8xl sm:text-9xl font-bold mb-[15px]">
-						Hello<span class="text-green-500">.</span>
-					</span>
-					<h1 class="text-4xl sm:text-5xl flex items-center mb-[15px]"><span class="h-[2px] w-10 bg-green-500 mr-3"></span>Je suis Victoria Carobbi</h1>
-					<p class="text-lg sm:text-xl mb-[15px]">Ingénieur d'affaire sportive</p>
-					<a href="assets/files/cv-victoria-carobbi.pdf" download="cv-victoria-carobbi.pdf" target="_blank">
-						<button class="flex items-center bg-green-500 py-3 px-6 w-max"><img src="assets/icons/download-white.png" alt="download" class="w-3 mr-2">Mon CV</button>
-					</a>
-				</div>
-			</div>
-			<div class="hidden sm:flex lg:basis-4/12 xl:basis-5/12 min-h-max justify-end lg:justify-center items-end xl:items-center">
-				<img src="assets/images/vic.webp" alt="victoria" class="w-3/4 lg:w-full xl:mt-10 grayscale">
-			</div>
-			<div class="sm:hidden absolute bottom-0 z-0 overflow-hidden">
-				<img src="assets/images/vic.webp" alt="victoria" class="h-screen w-fit max-w-[150%] grayscale opacity-25 translate-x-10">
-			</div>
-			<!-- social medias -->
-			<div class="h-full absolute top-0 left-0 hidden lg:flex justify-center items-center">
-				<div class="bg-dark z-10 py-3">
-					<a href="https://fr.linkedin.com/in/victoria-carobbi-772a261b1" target="_blank">
-						<div class="group flex justify-center items-center cursor-pointer p-5">
-							<img src="assets/icons/linkedin-gray.svg" alt="linkedin" class="absolute w-5 opacity-100 group-hover:opacity-0">
-							<img src="assets/icons/linkedin-green.svg" alt="linkedin" class="absolute w-5 opacity-0 group-hover:opacity-100">
-						</div>
-					</a>
-					<a href="https://www.instagram.com/victoria.crb/" target="_blank">
-						<div class="group flex justify-center items-center cursor-pointer p-5">
-							<img src="assets/icons/instagram-gray.svg" alt="instagram" class="absolute w-5 opacity-100 group-hover:opacity-0">
-							<img src="assets/icons/instagram-green.svg" alt="instagram" class="absolute w-5 opacity-0 group-hover:opacity-100">
-						</div>
-					</a>
-				</div>
-				<span class="absolute h-5/6 w-[2px] bg-gray-500"></span>
-			</div>
-			<!-- nav bar -->
-			<div id="navbar" class="w-full fixed top-0 left-0 flex justify-between items-center z-50 py-5 px-5 lg:px-20">
-				<div class="flex justify-start">
-					<h2 class="text-3xl sm:text-5xl flex items-center"><img src="assets/icons/turtle.png" alt="logo" class="w-6 sm:w-10 mr-3 sm:mr-5">Portfolio</h2>
-				</div>
-				<div class="hidden lg:flex justify-end">
-					<ul class="flex">
-						<li class="hover:text-green-500 p-3 cursor-pointer" data-value="home">Accueil</li>
-						<li class="hover:text-green-500 p-3 cursor-pointer" data-value="about">À propos</li>
-						<li class="hover:text-green-500 p-3 cursor-pointer" data-value="resume">Parcours</li>
-						<li class="hover:text-green-500 p-3 cursor-pointer" data-value="skills">Compétences</li>
-						<li class="hover:text-green-500 p-3 cursor-pointer" data-value="hobbies">Passions</li>
-						<li class="hover:text-green-500 p-3 cursor-pointer" data-value="contact">Contact</li>
-					</ul>
-				</div>
-				<div class="flex lg:hidden justify-end">
-					<img id="open-menu-button" src="assets/icons/menu-burger.svg" alt="menu" class="w-6 sm:w-8">
-				</div>
-			</div>
-			<!-- menu mobile -->
-			<div id="menu-mobile" class="fixed top-0 left-0 w-screen h-screen overflow-hidden z-50 bg-darklight translate-x-full">
-				<div class="w-full flex justify-between items-center py-5 px-5 lg:px-20">
-					<div class="flex justify-start">
-						<h2 class="text-3xl sm:text-5xl flex items-center"><img src="assets/icons/turtle.png" alt="logo" class="w-6 sm:w-10 mr-3 sm:mr-5">Portfolio</h2>
-					</div>
-					<div class="flex justify-end">
-						<img id="close-menu-button" src="assets/icons/close.svg" alt="close" class="w-6 sm:w-8">
-					</div>
-				</div>
-				<ul id="navbar-mobile" class="p-10 sm:p-20 text-2xl sm:text-4xl">
-					<li class="flex items-center p-3 sm:p-5 cursor-pointer" data-value="home"><img src="assets/icons/home.svg" alt="home" class="w-6 sm:w-10 mr-6 sm:mr-10">Accueil</li>
-					<li class="flex items-center p-3 sm:p-5 cursor-pointer" data-value="about"><img src="assets/icons/user-white.png" alt="about" class="w-6 sm:w-10 mr-6 sm:mr-10">À propos</li>
-					<li class="flex items-center p-3 sm:p-5 cursor-pointer" data-value="resume"><img src="assets/icons/suitcase.png" alt="resume" class="w-6 sm:w-10 mr-6 sm:mr-10">Parcours</li>
-					<li class="flex items-center p-3 sm:p-5 cursor-pointer" data-value="skills"><img src="assets/icons/brain.png" alt="skills" class="w-6 sm:w-10 mr-6 sm:mr-10">Compétences</li>
-					<li class="flex items-center p-3 sm:p-5 cursor-pointer" data-value="hobbies"><img src="assets/icons/run.png" alt="hobbies" class="w-6 sm:w-10 mr-6 sm:mr-10">Passions</li>
-					<li class="flex items-center p-3 sm:p-5 cursor-pointer" data-value="contact"><img src="assets/icons/send-white.png" alt="contact section" class="w-6 sm:w-10 mr-6 sm:mr-10">Contact</li>
-				</ul>
-			</div>
-		</div>
-	<!-- ===== headline ===== -->
+      <!-- ===== resume ===== -->
+      <div id="resume" class="py-10 sm:py-20">
+        <div class="w-full flex justify-center relative mb-10 sm:mb-16">
+          <h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">
+            RESUME
+          </h3>
+          <h3
+            class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3"
+          >
+            PARCOURS
+          </h3>
+        </div>
 
-	<!-- ===== about ===== -->
-		<div id="about" class="py-10 sm:py-20 flex flex-col items-center">
-			<div class="w-full flex justify-center relative mb-10 sm:mb-16">
-				<h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">ABOUT</h3>
-				<h3 class=" absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">QUI SUIS-JE?</h3>
-			</div>
-			<div class="w-full lg:flex justify-evenly items-center">
-				<div class="hidden lg:block w-4/12 max-w-xl">
-					<img src="assets/images/vic-about.webp" alt="" class="w-full grayscale">
-				</div>
-				<div class="w-full lg:w-7/12 max-w-4xl px-3 sm:px-10 lg:px-0">
-					<h4 class="text-3xl">À propos de moi</h4>
-					<span class="block h-[2px] w-10 bg-green-500 mt-3 mb-[15px]"></span>
-					<p class="text-justify text-gray-500 mb-[15px]">
-						Moi c'est Victoria, je suis actuellement en deuxième année de Master Management du Sport à Montpellier. À la suite de ce diplôme, je souhaite m'orienter vers l'aspect pratique du sport 
-						en intégrant une formation BPJEPS AF - option Haltérophilie et Musculation. Étant moi-même passionnée par le sport, mon ambition est de mettre à profit mes connaissances pour contribuer 
-						à la réalisation de vos objectifs sportifs. 
-					</p>
-					<p class="text-justify text-gray-500 mb-[15px]">
-						Pratiquant du Street Workout en compétition, je suis une personne déterminée, disciplinée et passionnée par ce que j'entreprends. Grâce à toutes mes expériences 
-						professionnelles et personnelles, j'ai appris à toujours avancer pour repousser mes limites.
-					</p>
-					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-[15px]">
-						<div class="about-item flex justify-between items-center bg-darklight py-3 px-4 md:px-6 border-s-4 border-darklight hover:border-green-500 cursor-copy">
-							<div class="max-h-min">
-								<h4 class="text-xl mb-1">Nom</h4>
-								<span class="text-gray-500 text-sm flex items-center cursor-pointer"><img src="assets/icons/copy.png" alt="copy" class="w-3 mr-2">Victoria Carobbi</span>
-							</div>
-							<img src="assets/icons/user.png" alt="" class="h-6">
-						</div>
-						<div class="about-item flex justify-between items-center bg-darklight py-3 px-4 md:px-6 border-s-4 border-darklight hover:border-green-500 cursor-copy">
-							<div class="max-h-min">
-								<h4 class="text-xl mb-1">Email</h4>
-								<span class="text-gray-500 text-sm flex items-center cursor-pointer"><img src="assets/icons/copy.png" alt="copy" class="w-3 mr-2">victoriacarobbi@gmail.com</span>
-							</div>
-							<img src="assets/icons/email.png" alt="" class="h-6">
-						</div>
-						<div class="about-item flex justify-between items-center bg-darklight py-3 px-4 md:px-6 border-s-4 border-darklight hover:border-green-500 cursor-copy">
-							<div class="max-h-min">
-								<h4 class="text-xl mb-1">Téléphone</h4>
-								<span class="text-gray-500 text-sm flex items-center cursor-pointer"><img src="assets/icons/copy.png" alt="copy" class="w-3 mr-2">06 30 56 78 76</span>
-							</div>
-							<img src="assets/icons/phone.png" alt="" class="h-6">
-						</div>
-						<div class="about-item flex justify-between items-center bg-darklight py-3 px-4 md:px-6 border-s-4 border-darklight hover:border-green-500 cursor-copy">
-							<div class="max-h-min">
-								<h4 class="text-xl mb-1">Localisation</h4>
-								<span class="text-gray-500 text-sm flex items-center cursor-pointer"><img src="assets/icons/copy.png" alt="copy" class="w-3 mr-2">Montpellier</span>
-							</div>
-							<img src="assets/icons/gps.png" alt="" class="h-6">
-						</div>
-					</div>					
-					<div class="sm:flex">
-						<a href="assets/files/cv-victoria-carobbi.pdf" download="cv-victoria-carobbi.pdf" target="_blank">
-							<button class="group flex items-center bg-green-500 hover:bg-dark hover:text-green-500 border-solid border-2 border-green-500 py-3 px-6 w-max sm:mr-[15px] mb-3 sm:mb-0">
-								<img src="assets/icons/download-white.png" alt="download" class="absolute w-3 mr-2 opacity-100 group-hover:opacity-0">
-								<img src="assets/icons/download-green.png" alt="download" class="w-3 mr-2 font-opacity-0 group-hover:opacity-100">
-								Téléchargez mon CV
-							</button>
-						</a>
-						<button id="contact-button" class="group flex items-center text-green-500 hover:bg-green-500 hover:text-white border-solid border-2 border-green-500 py-3 px-6 w-max">
-							<img src="assets/icons/send-green.png" alt="send" class="absolute w-3 mr-2 opacity-100 group-hover:opacity-0">
-							<img src="assets/icons/send-white.png" alt="send" class="w-3 mr-2 font-opacity-0 group-hover:opacity-100">
-							Contactez-moi
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- ===== about ===== -->
+        <div class="w-full flex justify-center items-center mb-[15px]">
+          <h4
+            id="experiences-button"
+            class="text-xl sm:text-3xl font-bold active"
+          >
+            Expériences
+          </h4>
+          <span class="h-[2px] w-5 sm:w-10 bg-green-500 mx-5"></span>
+          <h4
+            id="formations-button"
+            class="text-xl sm:text-3xl font-bold text-darklight cursor-pointer"
+          >
+            Formations
+          </h4>
+        </div>
 
-	<!-- ===== resume ===== -->
-		<div id="resume" class="py-10 sm:py-20">
-			<div class="w-full flex justify-center relative mb-10 sm:mb-16">
-				<h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">RESUME</h3>
-				<h3 class=" absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">PARCOURS</h3>
-			</div>
-			
-			<div class="w-full flex justify-center items-center mb-[15px]">
-				<h4 id="experiences-button" class="text-xl sm:text-3xl font-bold active">Expériences</h4>
-				<span class="h-[2px] w-5 sm:w-10 bg-green-500 mx-5"></span>
-				<h4 id="formations-button" class="text-xl sm:text-3xl font-bold text-darklight cursor-pointer">Formations</h4>
-			</div>
+        <!-- experiences -->
+        <div id="experiences" class="flex justify-evenly">
+          <!-- image -->
+          <div class="hidden lg:flex justify-end pt-6">
+            <div
+              class="sticky lg:max-w-[350px] lg:max-h-[350px] lg:top-[30dvh] xl:max-w-[450px] xl:max-h-[450px] xl:top-[20dvh]"
+            >
+              <!-- img 1 -->
+              <div class="experiences-image h-full relative block" data-id="1">
+                <div
+                  class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500"
+                >
+                  <h5>Chargée de développement commercial</h5>
+                  <div class="flex justify-between text-sm text-gray-500">
+                    <span>Golf de la Gardiole - Fabrègues</span>
+                    <span>2023-2024</span>
+                  </div>
+                </div>
+                <img src="assets/images/golf.webp" alt="" class="h-full" />
+              </div>
+              <!-- img 2 -->
+              <div class="experiences-image h-full relative hidden" data-id="2">
+                <div
+                  class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500"
+                >
+                  <h5>Conseillère de vente</h5>
+                  <div class="flex justify-between text-sm text-gray-500">
+                    <span>Intersport Trifontaine - Montpellier</span>
+                    <span>2022-2023</span>
+                  </div>
+                </div>
+                <img
+                  src="assets/images/intersport.webp"
+                  alt=""
+                  class="h-full"
+                />
+              </div>
+              <!-- img 3 -->
+              <div class="experiences-image h-full relative hidden" data-id="3">
+                <div
+                  class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500"
+                >
+                  <h5>Assistante Marketing & Communication</h5>
+                  <div class="flex justify-between text-sm text-gray-500">
+                    <span>Vandoeuvre Nancy Volley-Ball</span>
+                    <span>2021-2022</span>
+                  </div>
+                </div>
+                <img src="assets/images/vnvb.webp" alt="" class="h-full" />
+              </div>
+              <!-- img 4 -->
+              <div class="experiences-image h-full relative hidden" data-id="4">
+                <div
+                  class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500"
+                >
+                  <h5>Vendeuse & Conseillère de Vente</h5>
+                  <div class="flex justify-between text-sm text-gray-500">
+                    <span>Minelli & New Yorker - Nancy</span>
+                    <span>étés 2021 & 2022</span>
+                  </div>
+                </div>
+                <img src="assets/images/vendeuse.webp" alt="" class="h-full" />
+              </div>
+              <!-- img 5 -->
+              <div class="experiences-image h-full relative hidden" data-id="5">
+                <div
+                  class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500"
+                >
+                  <h5>Missions Intérimaires</h5>
+                  <div class="flex justify-between text-sm text-gray-500">
+                    <span>Adecco - Nancy</span>
+                    <span>2021</span>
+                  </div>
+                </div>
+                <img src="assets/images/adecco.webp" alt="" class="h-full" />
+              </div>
+              <!-- img 6 -->
+              <div class="experiences-image h-full relative hidden" data-id="6">
+                <div
+                  class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500"
+                >
+                  <h5>CDI étudiant</h5>
+                  <div class="flex justify-between text-sm text-gray-500">
+                    <span>Intermarché - Colombey-lès-Belles</span>
+                    <span>2020-2021</span>
+                  </div>
+                </div>
+                <img src="assets/images/caisse.webp" alt="" class="h-full" />
+              </div>
+            </div>
+          </div>
+          <!-- image -->
 
-			<!-- experiences -->
-			<div id="experiences" class="flex justify-evenly">	
-				<!-- image -->		
-				<div class="hidden lg:flex justify-end pt-6">
-					<div class="sticky lg:max-w-[350px] lg:max-h-[350px] lg:top-[30dvh] xl:max-w-[450px] xl:max-h-[450px] xl:top-[20dvh]">
-						<!-- img 1 -->
-						<div class="experiences-image h-full relative block" data-id="1">
-							<div class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500">
-								<h5>Chargée de développement commercial</h5>
-								<div class="flex justify-between text-sm text-gray-500">
-									<span>Golf de la Gardiole - Fabrègues</span>
-									<span>2023-2024</span>
-								</div>
-							</div>
-							<img src="assets/images/golf.webp" alt="" class="h-full">
-						</div>
-						<!-- img 2 -->
-						<div class="experiences-image h-full relative hidden" data-id="2">
-							<div class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500">
-								<h5>Conseillère de vente</h5>
-								<div class="flex justify-between text-sm text-gray-500">
-									<span>Intersport Trifontaine - Montpellier</span>
-									<span>2022-2023</span>
-								</div>
-							</div>
-							<img src="assets/images/intersport.webp" alt="" class="h-full">
-						</div>
-						<!-- img 3 -->
-						<div class="experiences-image h-full relative hidden" data-id="3">
-							<div class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500">
-								<h5>Assistante Marketing & Communication</h5>
-								<div class="flex justify-between text-sm text-gray-500">
-									<span>Vandoeuvre Nancy Volley-Ball</span>
-									<span>2021-2022</span>
-								</div>
-							</div>
-							<img src="assets/images/vnvb.webp" alt="" class="h-full">
-						</div>
-						<!-- img 4 -->
-						<div class="experiences-image h-full relative hidden" data-id="4">
-							<div class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500">
-								<h5>Vendeuse & Conseillère de Vente</h5>
-								<div class="flex justify-between text-sm text-gray-500">
-									<span>Minelli & New Yorker - Nancy</span>
-									<span>étés 2021 & 2022</span>
-								</div>
-							</div>
-							<img src="assets/images/vendeuse.webp" alt="" class="h-full">
-						</div>
-						<!-- img 5 -->
-						<div class="experiences-image h-full relative hidden" data-id="5">
-							<div class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500">
-								<h5>Missions Intérimaires</h5>
-								<div class="flex justify-between text-sm text-gray-500">
-									<span>Adecco - Nancy</span>
-									<span>2021</span>
-								</div>
-							</div>
-							<img src="assets/images/adecco.webp" alt="" class="h-full">
-						</div>
-						<!-- img 6 -->
-						<div class="experiences-image h-full relative hidden" data-id="6">
-							<div class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500">
-								<h5>CDI étudiant</h5>
-								<div class="flex justify-between text-sm text-gray-500">
-									<span>Intermarché - Colombey-lès-Belles</span>
-									<span>2020-2021</span>
-								</div>
-							</div>
-							<img src="assets/images/caisse.webp" alt="" class="h-full">
-						</div>
-					</div>
-				</div>
-				<!-- image -->
+          <!-- timeline -->
+          <div class="flex flex-col items-center">
+            <div class="relative pl-3">
+              <!-- item 1 -->
+              <div
+                class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer active"
+                data-id="1"
+              >
+                <div
+                  class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"
+                ></div>
+                <div
+                  class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4"
+                >
+                  <span
+                    class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500"
+                    >2023 - 2024</span
+                  >
+                  <h5
+                    class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3"
+                  >
+                    Chargée de développement commercial
+                  </h5>
+                  <div class="flex items-center text-gray-500 mb-3">
+                    <img
+                      src="assets/icons/gps.png"
+                      alt="gps"
+                      class="w-3 mr-1"
+                    />
+                    <span class="text-xs sm:text-sm font-normal"
+                      >Golf de la Gardiole - Fabrègues</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify"
+                  >
+                    Je suis en charge de la communication sur les réseaux
+                    sociaux, organisation d’évènements, recherche de
+                    partenariat, community manager, gestion du site web, accueil
+                    et gestion du golf.
+                  </p>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div
+                class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer"
+                data-id="2"
+              >
+                <div
+                  class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"
+                ></div>
+                <div
+                  class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4"
+                >
+                  <span
+                    class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500"
+                    >2022 - 2023</span
+                  >
+                  <h5
+                    class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3"
+                  >
+                    Conseillère de vente
+                  </h5>
+                  <div class="flex items-center text-gray-500 mb-3">
+                    <img
+                      src="assets/icons/gps.png"
+                      alt="gps"
+                      class="w-3 mr-1"
+                    />
+                    <span class="text-xs sm:text-sm font-normal"
+                      >Intersport Trifontaine - Montpellier</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify"
+                  >
+                    Lors de ma première année de Master Management du Sport,
+                    j’ai été en alternance au sein de l’enseigne Intersport en
+                    tant que conseillère de vente dans le rayon textile. Durant
+                    cette année, mes missions étaient la gestion de la relation
+                    client et de la satisfaction, l’optimisation des rayons avec
+                    le merchandising, d’être référente des univers musculation
+                    et zone événementielle, ainsi qu'occuper le poste d'hôtesse
+                    de caisse.
+                  </p>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div
+                class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer"
+                data-id="3"
+              >
+                <div
+                  class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"
+                ></div>
+                <div
+                  class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4"
+                >
+                  <span
+                    class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500"
+                    >2021 - 2022</span
+                  >
+                  <h5
+                    class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3"
+                  >
+                    Assistante Marketing & Communication
+                  </h5>
+                  <div class="flex items-center text-gray-500 mb-3">
+                    <img
+                      src="assets/icons/gps.png"
+                      alt="gps"
+                      class="w-3 mr-1"
+                    />
+                    <span class="text-xs sm:text-sm font-normal"
+                      >Vandoeuvre Nancy Volley-Ball - Nancy</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify"
+                  >
+                    Ayant réalisé ma troisième année de bachelor management du
+                    sport en alternance au VNVB, club de volley-ball féminin
+                    évoluant en Ligue A, j’ai eu la chance d’encadrer
+                    l’organisation d’évènement sportif de haut niveau, de
+                    partager du contenu sur les réseaux sociaux, rechercher des
+                    partenaires et aussi participer aux entraînements de
+                    volley-ball des jeunes en tant qu'assistante.
+                  </p>
+                </div>
+              </div>
+              <!-- item 4 -->
+              <div
+                class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer"
+                data-id="4"
+              >
+                <div
+                  class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"
+                ></div>
+                <div
+                  class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4"
+                >
+                  <span
+                    class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500"
+                    >étés 2021 & 2022</span
+                  >
+                  <h5
+                    class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3"
+                  >
+                    Vendeuse & Conseillère de Vente
+                  </h5>
+                  <div class="flex items-center text-gray-500 mb-3">
+                    <img
+                      src="assets/icons/gps.png"
+                      alt="gps"
+                      class="w-3 mr-1"
+                    />
+                    <span class="text-xs sm:text-sm font-normal"
+                      >Minelli & New Yorker - Nancy</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify"
+                  >
+                    Durant les étés 2021 et 2022 j’ai travaillé dans la boutique
+                    Minelli de Nancy en tant que vendeuse, où j’ai été en charge
+                    du magasin (ouverture, fermeture), hôtesse de caisse,
+                    vendeuse.<br />J’ai également travaillé chez New Yorker en
+                    conseillère de vente, où j’ai fait de la mise en rayon, du
+                    conseil client et de la manutention.
+                  </p>
+                </div>
+              </div>
+              <!-- item 5 -->
+              <div
+                class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer"
+                data-id="5"
+              >
+                <div
+                  class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"
+                ></div>
+                <div
+                  class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4"
+                >
+                  <span
+                    class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500"
+                    >2021</span
+                  >
+                  <h5
+                    class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3"
+                  >
+                    Missions Intérimaires
+                  </h5>
+                  <div class="flex items-center text-gray-500 mb-3">
+                    <img
+                      src="assets/icons/gps.png"
+                      alt="gps"
+                      class="w-3 mr-1"
+                    />
+                    <span class="text-xs sm:text-sm font-normal"
+                      >Adecco - Nancy</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify"
+                  >
+                    Grâce à Adecco, j’ai pu réaliser différentes missions comme
+                    des inventaires en magasin, l’activation de la marque
+                    dej’box, des événements pour promouvoir des produits et j’ai
+                    également occupé le poste d’employée commerciale chez Action
+                    Vandoeuvres-Lès-Nancy.
+                  </p>
+                </div>
+              </div>
+              <!-- item 6 -->
+              <div
+                class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer"
+                data-id="6"
+              >
+                <div
+                  class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"
+                ></div>
+                <div
+                  class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4"
+                >
+                  <span
+                    class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500"
+                    >2020 - 2021</span
+                  >
+                  <h5
+                    class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3"
+                  >
+                    CDI Etudiant
+                  </h5>
+                  <div class="flex items-center text-gray-500 mb-3">
+                    <img
+                      src="assets/icons/gps.png"
+                      alt="gps"
+                      class="w-3 mr-1"
+                    />
+                    <span class="text-xs sm:text-sm font-normal"
+                      >Intermarché - Colombey-lès-Belles</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify"
+                  >
+                    En tant qu’employée commerciale en CDI étudiant, j’ai été
+                    formée à la mise en rayon ainsi que sur le poste d’hôte de
+                    caisse.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- timeline -->
+        </div>
+        <!-- experiences -->
 
-				<!-- timeline -->
-				<div class="flex flex-col items-center">
-					<div class="relative pl-3">
-						<!-- item 1 -->
-						<div class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer active" data-id="1">
-							<div class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"></div>
-							<div class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4">
-								<span class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500">2023 - 2024</span>
-								<h5 class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3">Chargée de développement commercial</h5>							
-								<div class="flex items-center text-gray-500 mb-3 ">
-									<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-1">
-									<span class="text-xs sm:text-sm font-normal">Golf de la Gardiole - Fabrègues</span>
-								</div>
-								<p class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify">
-									Je suis en charge de la communication sur les réseaux sociaux, organisation d’évènements, recherche de partenariat, community manager, gestion du site web, accueil et gestion du golf.
-								</p>
-							</div>
-						</div>
-						<!-- item 2 -->
-						<div class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer" data-id="2">
-							<div class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"></div>
-							<div class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4">
-								<span class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500">2022 - 2023</span>
-								<h5 class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3">Conseillère de vente</h5>							
-								<div class="flex items-center text-gray-500 mb-3">
-									<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-1">
-									<span class="text-xs sm:text-sm font-normal">Intersport Trifontaine - Montpellier</span>
-								</div>
-								<p class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify">
-									Lors de ma première année de Master Management du Sport, j’ai été en alternance au sein de l’enseigne Intersport en tant que conseillère de vente dans le rayon textile. 
-									Durant cette année, mes missions étaient la gestion de la relation client et de la satisfaction, l’optimisation des rayons avec le merchandising, d’être référente des 
-									univers musculation et zone événementielle, ainsi qu'occuper le poste d'hôtesse de caisse.
-								</p>
-							</div>
-						</div>
-						<!-- item 3 -->
-						<div class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer" data-id="3">
-							<div class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"></div>
-							<div class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4">
-								<span class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500">2021 - 2022</span>
-								<h5 class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3">Assistante Marketing & Communication</h5>							
-								<div class="flex items-center text-gray-500 mb-3">
-									<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-1">
-									<span class="text-xs sm:text-sm font-normal">Vandoeuvre Nancy Volley-Ball - Nancy</span>
-								</div>
-								<p class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify">
-									Ayant réalisé ma troisième année de bachelor management du sport en alternance au VNVB, club de volley-ball féminin évoluant en Ligue A, j’ai eu la chance d’encadrer l’organisation d’évènement sportif de haut niveau, 
-									de partager du contenu sur les réseaux sociaux, rechercher des partenaires et aussi participer aux entraînements de volley-ball des jeunes en tant qu'assistante.
-								</p>
-							</div>
-						</div>
-						<!-- item 4 -->
-						<div class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer" data-id="4">
-							<div class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"></div>
-							<div class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4">
-								<span class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500">étés 2021 & 2022</span>
-								<h5 class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3">Vendeuse & Conseillère de Vente</h5>							
-								<div class="flex items-center text-gray-500 mb-3">
-									<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-1">
-									<span class="text-xs sm:text-sm font-normal">Minelli & New Yorker - Nancy</span>
-								</div>
-								<p class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify">
-									Durant les étés 2021 et 2022 j’ai travaillé dans la boutique Minelli de Nancy en tant que vendeuse, où j’ai été en charge du magasin (ouverture, fermeture), 
-									hôtesse de caisse, vendeuse.<br>J’ai également travaillé chez New Yorker en conseillère de vente, où j’ai fait de la mise en rayon, du conseil client et de la manutention.
-								</p>
-							</div>
-						</div>
-						<!-- item 5 -->
-						<div class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer" data-id="5">
-							<div class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"></div>
-							<div class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4">
-								<span class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500">2021</span>
-								<h5 class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3">Missions Intérimaires</h5>							
-								<div class="flex items-center text-gray-500 mb-3">
-									<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-1">
-									<span class="text-xs sm:text-sm font-normal">Adecco - Nancy</span>
-								</div>
-								<p class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify">
-									Grâce à Adecco, j’ai pu réaliser différentes missions comme des inventaires en magasin, l’activation de la marque dej’box, des événements pour promouvoir 
-									des produits et j’ai également occupé le poste d’employée commerciale chez Action Vandoeuvres-Lès-Nancy.
-								</p>
-							</div>
-						</div>
-						<!-- item 6 -->
-						<div class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 experiences-item sm:w-max before:bg-darklight min-w-full cursor-pointer" data-id="6">
-							<div class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"></div>
-							<div class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4">
-								<span class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500">2020 - 2021</span>
-								<h5 class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3">CDI Etudiant</h5>							
-								<div class="flex items-center text-gray-500 mb-3">
-									<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-1">
-									<span class="text-xs sm:text-sm font-normal">Intermarché - Colombey-lès-Belles</span>
-								</div>
-								<p class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify">
-									En tant qu’employée commerciale en CDI étudiant, j’ai été formée à la mise en rayon ainsi que sur le poste d’hôte de caisse.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- timeline -->
-			</div>
-			<!-- experiences -->
+        <!-- formations -->
+        <div id="formations" class="justify-evenly hidden">
+          <!-- image -->
+          <div class="hidden lg:flex justify-end pt-6">
+            <div
+              class="sticky lg:max-w-[350px] lg:max-h-[350px] lg:top-[30dvh] xl:max-w-[450px] xl:max-h-[450px] xl:top-[20dvh]"
+            >
+              <!-- img 1 -->
+              <div class="formations-image h-full relative" data-id="1">
+                <div
+                  class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500"
+                >
+                  <h5>Master Management du Sport</h5>
+                  <div class="flex justify-between text-sm text-gray-500">
+                    <span>Win Sport School - Montpellier</span>
+                    <span>2022-2024</span>
+                  </div>
+                </div>
+                <img
+                  src="assets/images/master.webp"
+                  alt="master"
+                  class="h-full"
+                />
+              </div>
+              <!-- img 2 -->
+              <div class="formations-image h-full relative hidden" data-id="2">
+                <div
+                  class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500"
+                >
+                  <h5>Bachelor 3 Management du Sport</h5>
+                  <div class="flex justify-between text-sm text-gray-500">
+                    <span>Win Sport School - Nancy</span>
+                    <span>2021-2022</span>
+                  </div>
+                </div>
+                <img
+                  src="assets/images/bachelor.webp"
+                  alt="bachelor"
+                  class="h-full"
+                />
+              </div>
+              <!-- img 3 -->
+              <div class="formations-image h-full relative hidden" data-id="3">
+                <div
+                  class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500"
+                >
+                  <h5>
+                    BTS Négociation et Digitalisation de la Relation Client
+                  </h5>
+                  <div class="flex justify-between text-sm text-gray-500">
+                    <span>Lycée Frédéric Chopin - Nancy</span>
+                    <span>2019-2021</span>
+                  </div>
+                </div>
+                <img src="assets/images/ndrc.webp" alt="bts" class="h-full" />
+              </div>
+            </div>
+          </div>
+          <!-- image -->
 
-			<!-- formations -->
-			<div id="formations" class="justify-evenly hidden">	
-				<!-- image -->		
-				<div class="hidden lg:flex justify-end pt-6">
-					<div class="sticky lg:max-w-[350px] lg:max-h-[350px] lg:top-[30dvh] xl:max-w-[450px] xl:max-h-[450px] xl:top-[20dvh]">
-						<!-- img 1 -->
-						<div class="formations-image h-full relative" data-id="1">
-							<div class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500">
-								<h5>Master Management du Sport</h5>
-								<div class="flex justify-between text-sm text-gray-500">
-									<span>Win Sport School - Montpellier</span>
-									<span>2022-2024</span>
-								</div>
-							</div>
-							<img src="assets/images/master.webp" alt="master" class="h-full">
-						</div>
-						<!-- img 2 -->
-						<div class="formations-image h-full relative hidden" data-id="2">
-							<div class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500">
-								<h5>Bachelor 3 Management du Sport</h5>
-								<div class="flex justify-between text-sm text-gray-500">
-									<span>Win Sport School - Nancy</span>
-									<span>2021-2022</span>
-								</div>
-							</div>
-							<img src="assets/images/bachelor.webp" alt="bachelor" class="h-full">
-						</div>
-						<!-- img 3 -->
-						<div class="formations-image h-full relative hidden" data-id="3">
-							<div class="w-[90%] absolute top-[-20px] left-[-30px] bg-darklight py-3 px-5 border-s-4 border-green-500">
-								<h5>BTS Négociation et Digitalisation de la Relation Client</h5>
-								<div class="flex justify-between text-sm text-gray-500">
-									<span>Lycée Frédéric Chopin - Nancy</span>
-									<span>2019-2021</span>
-								</div>
-							</div>
-							<img src="assets/images/ndrc.webp" alt="bts" class="h-full">
-						</div>
-					</div>
-				</div>
-				<!-- image -->
+          <!-- timeline -->
+          <div class="flex flex-col items-center">
+            <div class="relative pl-3">
+              <!-- item 1 -->
+              <div
+                class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 formations-item sm:w-max before:bg-darklight min-w-full cursor-pointer active"
+                data-id="1"
+              >
+                <div
+                  class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"
+                ></div>
+                <div
+                  class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4"
+                >
+                  <span
+                    class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500"
+                    >2022 - 2024</span
+                  >
+                  <h5
+                    class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3"
+                  >
+                    Master Management du Sport
+                  </h5>
+                  <div class="flex items-center text-gray-500 mb-3">
+                    <img
+                      src="assets/icons/gps.png"
+                      alt="gps"
+                      class="w-3 mr-1"
+                    />
+                    <span class="text-xs sm:text-sm font-normal"
+                      >Win Sport School - Montpellier</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify"
+                  >
+                    Lors de ces deux années de Master Management du Sport, j’ai
+                    acquis des compétences dans l’organisation et la gestion
+                    d’évènement sportif (à grande et petite envergure), dans le
+                    développement et la stratégie de marque, en négociation
+                    client et également en gestion et finance. Grâce à ces deux
+                    années, j’ai également eu la chance de réaliser des
+                    séminaires avec des intervenants à l’Olympique de Marseille,
+                    Décathlon Odysseum et SpotyRide.
+                  </p>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div
+                class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 formations-item sm:w-max before:bg-darklight min-w-full cursor-pointer"
+                data-id="2"
+              >
+                <div
+                  class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"
+                ></div>
+                <div
+                  class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4"
+                >
+                  <span
+                    class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500"
+                    >2021 - 2022</span
+                  >
+                  <h5
+                    class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3"
+                  >
+                    Bachelor 3 Management du Sport
+                  </h5>
 
-				<!-- timeline -->
-				<div class="flex flex-col items-center">
-					<div class="relative pl-3">
-						<!-- item 1 -->
-						<div class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 formations-item sm:w-max before:bg-darklight min-w-full cursor-pointer active" data-id="1">
-							<div class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"></div>
-							<div class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4">
-								<span class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500">2022 - 2024</span>
-								<h5 class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3">Master Management du Sport</h5>							
-								<div class="flex items-center text-gray-500 mb-3">
-									<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-1">
-									<span class="text-xs sm:text-sm font-normal">Win Sport School - Montpellier</span>
-								</div>
-								<p class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify">
-									Lors de ces deux années de Master Management du Sport, j’ai acquis des compétences dans l’organisation et la gestion d’évènement sportif 
-									(à grande et petite envergure), dans le développement et la stratégie de marque, en négociation client et également en gestion et finance. 
-									Grâce à ces deux années, j’ai également eu la chance de réaliser des séminaires avec des intervenants à l’Olympique de Marseille, Décathlon Odysseum et SpotyRide.
-								</p>
-							</div>
-						</div>
-						<!-- item 2 -->
-						<div class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 formations-item sm:w-max before:bg-darklight min-w-full cursor-pointer" data-id="2">
-							<div class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"></div>
-							<div class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4">
-								<span class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500">2021 - 2022</span>
-								<h5 class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3">Bachelor 3 Management du Sport</h5>
-								
-								<div class="flex items-center text-gray-500 mb-3">
-									<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-1">
-									<span class="text-xs sm:text-sm font-normal">Win Sport School - Nancy</span>
-								</div>
-								<p class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify">
-									Durant ma troisième année de Bachelor Management du Sport, j’ai acquis de l’expertise dans la communication digitale, le marketing et les stratégies de développement, 
-									la gestion d’évènement sportif, l’optimisation d’un club et également en management d’équipe.
-								</p>
-							</div>
-						</div>
-						<!-- item 3 -->
-						<div class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 formations-item sm:w-max before:bg-darklight min-w-full cursor-pointer" data-id="3">
-							<div class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"></div>
-							<div class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4">
-								<span class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500">2019 - 2021</span>
-								<h5 class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3">BTS Négociation et Digitalisation de la Relation Client</h5>
-								
-								<div class="flex items-center text-gray-500 mb-3">
-									<img src="assets/icons/gps.png" alt="gps" class="w-3 mr-1">
-									<span class="text-xs sm:text-sm font-normal">Lycée Frédéric Chopin - Nancy</span>
-								</div>
-								<p class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify">
-									En réalisant deux années de BTS NDRC, j’ai développé des connaissances dans la gestion de la relation client, la négociation, la satisfaction et la réponse aux besoins 
-									de la clientèle.<br>Ayant réalisé des stages en agences immobilières, j’ai eu la chance de réaliser des locations de biens, d’assister à une conclusion de vente, des 
-									rendez-vous notaire et j’ai réalisé la communication digitale de ces agences.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- timeline -->
-			</div>
-			<!-- formations -->
-		</div>
-	<!-- ===== resume ===== -->
+                  <div class="flex items-center text-gray-500 mb-3">
+                    <img
+                      src="assets/icons/gps.png"
+                      alt="gps"
+                      class="w-3 mr-1"
+                    />
+                    <span class="text-xs sm:text-sm font-normal"
+                      >Win Sport School - Nancy</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify"
+                  >
+                    Durant ma troisième année de Bachelor Management du Sport,
+                    j’ai acquis de l’expertise dans la communication digitale,
+                    le marketing et les stratégies de développement, la gestion
+                    d’évènement sportif, l’optimisation d’un club et également
+                    en management d’équipe.
+                  </p>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div
+                class="group relative pl-3 last:pb-0 before:w-[2px] before:h-[110%] before:absolute before:left-[7px] before:top-0 formations-item sm:w-max before:bg-darklight min-w-full cursor-pointer"
+                data-id="3"
+              >
+                <div
+                  class="absolute left-0 top-[20px] h-4 w-4 rounded-full bg-darklight group-[.active]:bg-green-500"
+                ></div>
+                <div
+                  class="max-w-lg xl:max-w-xl group-[.active]:bg-darklight py-4 px-5 m-4"
+                >
+                  <span
+                    class="text-xs bg-darklight group-[.active]:bg-dark py-2 px-3 group-[.active]:text-gray-500"
+                    >2019 - 2021</span
+                  >
+                  <h5
+                    class="text-lg sm:text-xl group-[.active]:text-green-500 font-bold mt-3"
+                  >
+                    BTS Négociation et Digitalisation de la Relation Client
+                  </h5>
 
-	<!-- ===== skills ===== -->
-		<div id="skills" class="py-10 sm:py-20 flex flex-col items-center">
-			<div class="w-full flex justify-center relative mb-10 sm:mb-16">
-				<h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">SKILLS</h3>
-				<h3 class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">COMPÉTENCES</h3>
-			</div>
-			<div class="max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-3 sm:px-10">
-				<div class="relative bg-darklight flex flex-col text-center p-6">
-					<div class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3">
-						<span class="text-xl font-semibold">01</span>
-					</div>
-					<div class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]">
-						<img src="assets/icons/body.png" alt="video" class="w-full">
-					</div>
-					<h4 class="text-xl font-semibold mb-[15px]">SPORT & ANATOMIE</h4>
-					<p class="text-gray-500 text-sm leading-6">Compréhension des muscles et techniques pour les utiliser dans la pratique sportive. Aptitude à élaborer des programmes d'entraînement adaptés à différents objectifs tels que la prise de masse musculaire, la  perte de poids et l'augmentation de la force.</p>
-				</div>
-				<div class="relative bg-darklight flex flex-col text-center p-6">
-					<div class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3">
-						<span class="text-xl font-semibold">02</span>
-					</div>
-					<div class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]">
-						<img src="assets/icons/nutrition.png" alt="video" class="w-full">
-					</div>
-					<h4 class="text-xl font-semibold mb-[15px]">NUTRITION</h4>
-					<p class="text-gray-500 text-sm leading-6">Aptitude à gérer divers régimes alimentaires, comprenant les connaissances sur les macronutriments et les micronutriments essentiels au fonctionnement optimal du corps. Intérêt pour l'importance et la compréhension de la nutrition dans la vie quotidienne.</p>
-				</div>
-				<div class="relative bg-darklight flex flex-col text-center p-6">
-					<div class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3">
-						<span class="text-xl font-semibold">03</span>
-					</div>
-					<div class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]">
-						<img src="assets/icons/social-media.png" alt="social media" class="w-full">
-					</div>
-					<h4 class="text-xl font-semibold mb-[15px]">RÉSEAUX SOCIAUX</h4>
-					<p class="text-gray-500 text-sm leading-6">Expérience de community manager et connaissance des Réseaux sociaux, stratégie de développement digitale.</p>
-				</div>
-				<div class="relative bg-darklight flex flex-col text-center p-6">
-					<div class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3">
-						<span class="text-xl font-semibold">04</span>
-					</div>
-					<div class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]">
-						<img src="assets/icons/calendar.png" alt="calendar" class="w-full">
-					</div>
-					<h4 class="text-xl font-semibold mb-[15px]">ORGANISATION ET GESTION D'ÉVÈNEMENTS</h4>
-					<p class="text-gray-500 text-sm leading-6">Réalisation et gestion d’évènement sportif, bénévolat et management d’équipe.</p>
-				</div>
-				<div class="relative bg-darklight flex flex-col text-center p-6">
-					<div class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3">
-						<span class="text-xl font-semibold">05</span>
-					</div>
-					<div class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]">
-						<img src="assets/icons/chart.png" alt="chart" class="w-full">
-					</div>
-					<h4 class="text-xl font-semibold mb-[15px]">DÉVELOPPEMENT COMMERCIAL</h4>
-					<p class="text-gray-500 text-sm leading-6">Connaissance des principes de ventes, bon relationnel client, capacité à trouver des partenaires, prospection client et optimisation des ventes.</p>
-				</div>
-				<div class="relative bg-darklight flex flex-col text-center p-6">
-					<div class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3">
-						<span class="text-xl font-semibold">06</span>
-					</div>
-					<div class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]">
-						<img src="assets/icons/video.png" alt="video" class="w-full">
-					</div>
-					<h4 class="text-xl font-semibold mb-[15px]">MONTAGE VIDÉO</h4>
-					<p class="text-gray-500 text-sm leading-6">Utilisation et maîtrise des logiciels DaVinci, Cap Cut et InShoot. Capacité à réaliser des montages pour divers types de vidéos.</p>
-				</div>
-			</div>
-		</div>
-	<!-- ===== skills ===== -->
+                  <div class="flex items-center text-gray-500 mb-3">
+                    <img
+                      src="assets/icons/gps.png"
+                      alt="gps"
+                      class="w-3 mr-1"
+                    />
+                    <span class="text-xs sm:text-sm font-normal"
+                      >Lycée Frédéric Chopin - Nancy</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm sm:text-base text-gray-500 group-[.active]:text-white text-justify"
+                  >
+                    En réalisant deux années de BTS NDRC, j’ai développé des
+                    connaissances dans la gestion de la relation client, la
+                    négociation, la satisfaction et la réponse aux besoins de la
+                    clientèle.<br />Ayant réalisé des stages en agences
+                    immobilières, j’ai eu la chance de réaliser des locations de
+                    biens, d’assister à une conclusion de vente, des rendez-vous
+                    notaire et j’ai réalisé la communication digitale de ces
+                    agences.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- timeline -->
+        </div>
+        <!-- formations -->
+      </div>
+      <!-- ===== resume ===== -->
 
-	<!-- ===== hobbies ===== -->
-		<div id="hobbies" class="py-10 mb-10 lg:mb-0  sm:py-20 flex flex-col items-center">
-			<div class="w-full flex justify-center relative mb-10 sm:mb-16">
-				<h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">HOBBIES</h3>
-				<h3 class=" absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">MES PASSIONS</h3>
-			</div>
-			<div class="max-w-lg lg:max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-20 px-3 sm:px-10">
-				<div class="group relative">
-					<img src="assets/images/street.webp" alt="street workout" class="max-h-full lg:grayscale group-hover:grayscale-0">
-					<div class="absolute -bottom-12 -left-2 lg:bottom-0 lg:left-0 lg:group-hover:-left-5 lg:group-hover:-bottom-10 w-full bg-darklight py-3 px-5 border-green-500 border-s-4">
-						<h4>Street Workout</h4>
-						<p class="text-xs sm:text-sm text-gray-500">Championne de France 2023 Muscle-Up Only</p>
-					</div>
-				</div>
-				<div class="group relative">
-					<img src="assets/images/rando.webp" alt="hikes" class="max-h-full lg:grayscale group-hover:grayscale-0">
-					<div class="absolute -bottom-12 -left-2 lg:bottom-0 lg:left-0 lg:group-hover:-left-5 lg:group-hover:-bottom-10 w-full bg-darklight py-3 px-5 border-green-500 border-s-4">
-						<h4>Randonnées</h4>
-						<p class="text-xs sm:text-sm text-gray-500">Pratique régulière de randonnées et d'excursions</p>
-					</div>
-				</div>
-				<div class="group relative">
-					<img src="assets/images/trip.webp" alt="trip" class="max-h-full lg:grayscale group-hover:grayscale-0">
-					<div class="absolute -bottom-12 -left-2 lg:bottom-0 lg:left-0 lg:group-hover:-left-5 lg:group-hover:-bottom-10 w-full bg-darklight py-3 px-5 border-green-500 border-s-4">
-						<h4>Voyages</h4>
-						<p class="text-xs sm:text-sm text-gray-500">Enrichissements culturels, traditions et découverte du monde</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- ===== hobbies ===== -->
+      <!-- ===== skills ===== -->
+      <div id="skills" class="py-10 sm:py-20 flex flex-col items-center">
+        <div class="w-full flex justify-center relative mb-10 sm:mb-16">
+          <h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">
+            SKILLS
+          </h3>
+          <h3
+            class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3"
+          >
+            COMPÉTENCES
+          </h3>
+        </div>
+        <div
+          class="max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-3 sm:px-10"
+        >
+          <div class="relative bg-darklight flex flex-col text-center p-6">
+            <div
+              class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3"
+            >
+              <span class="text-xl font-semibold">01</span>
+            </div>
+            <div
+              class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]"
+            >
+              <img src="assets/icons/body.png" alt="video" class="w-full" />
+            </div>
+            <h4 class="text-xl font-semibold mb-[15px]">SPORT & ANATOMIE</h4>
+            <p class="text-gray-500 text-sm leading-6">
+              Compréhension des muscles et techniques pour les utiliser dans la
+              pratique sportive. Aptitude à élaborer des programmes
+              d'entraînement adaptés à différents objectifs tels que la prise de
+              masse musculaire, la perte de poids et l'augmentation de la force.
+            </p>
+          </div>
+          <div class="relative bg-darklight flex flex-col text-center p-6">
+            <div
+              class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3"
+            >
+              <span class="text-xl font-semibold">02</span>
+            </div>
+            <div
+              class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]"
+            >
+              <img
+                src="assets/icons/nutrition.png"
+                alt="video"
+                class="w-full"
+              />
+            </div>
+            <h4 class="text-xl font-semibold mb-[15px]">NUTRITION</h4>
+            <p class="text-gray-500 text-sm leading-6">
+              Aptitude à gérer divers régimes alimentaires, comprenant les
+              connaissances sur les macronutriments et les micronutriments
+              essentiels au fonctionnement optimal du corps. Intérêt pour
+              l'importance et la compréhension de la nutrition dans la vie
+              quotidienne.
+            </p>
+          </div>
+          <div class="relative bg-darklight flex flex-col text-center p-6">
+            <div
+              class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3"
+            >
+              <span class="text-xl font-semibold">03</span>
+            </div>
+            <div
+              class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]"
+            >
+              <img
+                src="assets/icons/social-media.png"
+                alt="social media"
+                class="w-full"
+              />
+            </div>
+            <h4 class="text-xl font-semibold mb-[15px]">RÉSEAUX SOCIAUX</h4>
+            <p class="text-gray-500 text-sm leading-6">
+              Expérience de community manager et connaissance des Réseaux
+              sociaux, stratégie de développement digitale.
+            </p>
+          </div>
+          <div class="relative bg-darklight flex flex-col text-center p-6">
+            <div
+              class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3"
+            >
+              <span class="text-xl font-semibold">04</span>
+            </div>
+            <div
+              class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]"
+            >
+              <img
+                src="assets/icons/calendar.png"
+                alt="calendar"
+                class="w-full"
+              />
+            </div>
+            <h4 class="text-xl font-semibold mb-[15px]">
+              ORGANISATION ET GESTION D'ÉVÈNEMENTS
+            </h4>
+            <p class="text-gray-500 text-sm leading-6">
+              Réalisation et gestion d’évènement sportif, bénévolat et
+              management d’équipe.
+            </p>
+          </div>
+          <div class="relative bg-darklight flex flex-col text-center p-6">
+            <div
+              class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3"
+            >
+              <span class="text-xl font-semibold">05</span>
+            </div>
+            <div
+              class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]"
+            >
+              <img src="assets/icons/chart.png" alt="chart" class="w-full" />
+            </div>
+            <h4 class="text-xl font-semibold mb-[15px]">
+              DÉVELOPPEMENT COMMERCIAL
+            </h4>
+            <p class="text-gray-500 text-sm leading-6">
+              Connaissance des principes de ventes, bon relationnel client,
+              capacité à trouver des partenaires, prospection client et
+              optimisation des ventes.
+            </p>
+          </div>
+          <div class="relative bg-darklight flex flex-col text-center p-6">
+            <div
+              class="absolute top-5 -left-2 sm:-left-5 bg-green-500 z-10 py-2 px-3"
+            >
+              <span class="text-xl font-semibold">06</span>
+            </div>
+            <div
+              class="self-center rounded-full border border-green-500 w-12 p-3 mb-[15px]"
+            >
+              <img src="assets/icons/video.png" alt="video" class="w-full" />
+            </div>
+            <h4 class="text-xl font-semibold mb-[15px]">MONTAGE VIDÉO</h4>
+            <p class="text-gray-500 text-sm leading-6">
+              Utilisation et maîtrise des logiciels DaVinci, Cap Cut et InShoot.
+              Capacité à réaliser des montages pour divers types de vidéos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ===== skills ===== -->
 
-	<!-- ===== contact ===== -->
-		<div id="contact" class="w-full py-10 sm:py-20">
-			<div class="w-full flex justify-center relative mb-10 sm:mb-16 overflow-hidden">
-				<h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">CONTACT</h3>
-				<h3 class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3">CONTACTEZ-MOI</h3>
-			</div>
-			<div class="flex flex-col lg:flex-row justify-evenly items-center">
-				<div class="w-full lg:w-5/12 flex justify-center lg:justify-end mb-20 lg:mb-0 px-3">
-					<div id="contact-form" class="w-full max-w-lg flex flex-col">
-						<input type="text" id="name" name="name" placeholder="Nom" class="bg-dark border-b-2 border-gray-500 py-3 mb-6 placeholder:text-gray-500 outline-none" required>
-						<input type="email" id="email" name="email" placeholder="Email" class="bg-dark border-b-2 border-gray-500 py-3 mb-6 placeholder:text-gray-500 outline-none" required>
-						<input type="subject" id="subject" name="subject" placeholder="Subject" class="bg-dark border-b-2 border-gray-500 py-3 mb-6 placeholder:text-gray-500 outline-none" required>
-						<textarea id="message" name="message" rows="5" placeholder="Message" class="bg-dark border-b-2 border-gray-500 py-3 mb-6 placeholder:text-gray-500 outline-none" required></textarea>
-						<button type="submit" id="submit" class="group flex items-center bg-green-500 hover:bg-dark hover:text-green-500 border-solid border-2 border-green-500 py-3 px-6 w-max mr-[15px]">
-							<img src="assets/icons/send-white.png" alt="send" class="absolute w-3 mr-2 opacity-100 group-hover:opacity-0">
-							<img src="assets/icons/send-green.png" alt="send" class="w-3 mr-2 font-opacity-0 group-hover:opacity-100">
-							Envoyer
-						</button>
-					</div>
-				</div>
-				<div class="w-full lg:w-5/12 min-h-max max-w-lg flex flex-col justify-between text-gray-500 px-3 sm:px-14 lg:px-0">
-					<h4 class="text-white text-3xl font-bold">Coordonnées</h4>
-					<span class="block h-[2px] w-10 bg-green-500 mt-3"></span>
-					<div class="w-fit sm:pl-10 py-10 self-center lg:self-start">
-						<div class="contact-item flex items-center mb-[15px] cursor-pointer">
-							<img src="assets/icons/user.png" alt="me" class="w-5 mr-5 sm:mr-10">
-							<span class="flex items-center">Victoria Carobbi<img src="assets/icons/copy.png" alt="copy" class="w-3 ml-2"></span>
-						</div>
-						<div class="contact-item flex items-center mb-[15px] cursor-pointer">
-							<img src="assets/icons/phone.png" alt="phone" class="w-5 mr-5 sm:mr-10">
-							<span class="flex items-center">06 30 56 78 76<img src="assets/icons/copy.png" alt="copy" class="w-3 ml-2"></span>
-						</div>
-						<div class="contact-item flex items-center mb-[15px] cursor-pointer">
-							<img src="assets/icons/email.png" alt="email" class="w-5 mr-5 sm:mr-10">
-							<span class="flex items-center">victoriacarobbi@gmail.com<img src="assets/icons/copy.png" alt="copy" class="w-3 ml-2"></span>
-						</div>
-						<div class="contact-item flex items-center mb-[15px] cursor-pointer">
-							<img src="assets/icons/gps.png" alt="localisation" class="w-5 mr-5 sm:mr-10">
-							<span class="flex items-center">Montpellier<img src="assets/icons/copy.png" alt="copy" class="w-3 ml-2"></span>
-						</div>
-					</div>
-					<h4 class="text-white text-3xl font-bold">Réseaux Sociaux</h4>
-					<span class="block h-[2px] w-10 bg-green-500 mt-3"></span>
-					<div class="w-full max-w-lg sm:max-w-none grid grid-cols-2 lg:grid-cols-3 sm:pl-10 pt-10">
-						<a href="https://fr.linkedin.com/in/victoria-carobbi-772a261b1" target="_blank">
-							<div class="group flex justify-center lg:justify-start cursor-pointer">
-								<img src="assets/icons/linkedin-gray.svg" alt="linkedin" class="absolute w-10 opacity-100 group-hover:opacity-0">
-								<img src="assets/icons/linkedin-green.svg" alt="linkedin" class="absolute w-10 opacity-0 group-hover:opacity-100">
-							</div>
-						</a>
-						<a href="https://www.instagram.com/victoria.crb/" target="_blank">
-							<div class="group flex justify-center lg:justify-start cursor-pointer">
-								<img src="assets/icons/instagram-gray.svg" alt="intagram" class="absolute w-10 opacity-100 group-hover:opacity-0">
-								<img src="assets/icons/instagram-green.svg" alt="intagram" class="absolute w-10 opacity-0 group-hover:opacity-100">
-							</div>
-						</a>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	<!-- ===== contact ===== -->
+      <!-- ===== hobbies ===== -->
+      <div
+        id="hobbies"
+        class="py-10 mb-10 lg:mb-0 sm:py-20 flex flex-col items-center"
+      >
+        <div class="w-full flex justify-center relative mb-10 sm:mb-16">
+          <h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">
+            HOBBIES
+          </h3>
+          <h3
+            class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3"
+          >
+            MES PASSIONS
+          </h3>
+        </div>
+        <div
+          class="max-w-lg lg:max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-20 px-3 sm:px-10"
+        >
+          <div class="group relative">
+            <img
+              src="assets/images/street.webp"
+              alt="street workout"
+              class="max-h-full lg:grayscale group-hover:grayscale-0"
+            />
+            <div
+              class="absolute -bottom-12 -left-2 lg:bottom-0 lg:left-0 lg:group-hover:-left-5 lg:group-hover:-bottom-10 w-full bg-darklight py-3 px-5 border-green-500 border-s-4"
+            >
+              <h4>Street Workout</h4>
+              <p class="text-xs sm:text-sm text-gray-500">
+                Championne de France 2023 Muscle-Up Only
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <img
+              src="assets/images/rando.webp"
+              alt="hikes"
+              class="max-h-full lg:grayscale group-hover:grayscale-0"
+            />
+            <div
+              class="absolute -bottom-12 -left-2 lg:bottom-0 lg:left-0 lg:group-hover:-left-5 lg:group-hover:-bottom-10 w-full bg-darklight py-3 px-5 border-green-500 border-s-4"
+            >
+              <h4>Randonnées</h4>
+              <p class="text-xs sm:text-sm text-gray-500">
+                Pratique régulière de randonnées et d'excursions
+              </p>
+            </div>
+          </div>
+          <div class="group relative">
+            <img
+              src="assets/images/trip.webp"
+              alt="trip"
+              class="max-h-full lg:grayscale group-hover:grayscale-0"
+            />
+            <div
+              class="absolute -bottom-12 -left-2 lg:bottom-0 lg:left-0 lg:group-hover:-left-5 lg:group-hover:-bottom-10 w-full bg-darklight py-3 px-5 border-green-500 border-s-4"
+            >
+              <h4>Voyages</h4>
+              <p class="text-xs sm:text-sm text-gray-500">
+                Enrichissements culturels, traditions et découverte du monde
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ===== hobbies ===== -->
 
-	<!-- ===== footer ===== -->
-		<div id="footer" class="w-full py-8 px-6 border-t border-darklight mt-20">
-			<span class="text-xs sm:text-sm text-green-500">© 2024 Victoria Carobbi - developed by <a href="https://marianbonhomme.com" target="_blank">Marian Bonhomme</a></span>
-		</div>
-	<!-- ===== footer ===== -->
+      <!-- ===== contact ===== -->
+      <div id="contact" class="w-full py-10 sm:py-20">
+        <div
+          class="w-full flex justify-center relative mb-10 sm:mb-16 overflow-hidden"
+        >
+          <h3 class="text-7xl sm:text-9xl font-black text-gray-500 opacity-5">
+            CONTACT
+          </h3>
+          <h3
+            class="absolute self-center justify-self-center text-xl sm:text-4xl font-black tracking-widest text-green-500 mt-3"
+          >
+            CONTACTEZ-MOI
+          </h3>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-evenly items-center">
+          <div
+            class="w-full lg:w-5/12 flex justify-center lg:justify-end mb-20 lg:mb-0 px-3"
+          >
+            <div id="contact-form" class="w-full max-w-lg flex flex-col">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nom"
+                class="bg-dark border-b-2 border-gray-500 py-3 mb-6 placeholder:text-gray-500 outline-none"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                class="bg-dark border-b-2 border-gray-500 py-3 mb-6 placeholder:text-gray-500 outline-none"
+                required
+              />
+              <input
+                type="subject"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                class="bg-dark border-b-2 border-gray-500 py-3 mb-6 placeholder:text-gray-500 outline-none"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Message"
+                class="bg-dark border-b-2 border-gray-500 py-3 mb-6 placeholder:text-gray-500 outline-none"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                id="submit"
+                class="group flex items-center bg-green-500 hover:bg-dark hover:text-green-500 border-solid border-2 border-green-500 py-3 px-6 w-max mr-[15px]"
+              >
+                <img
+                  src="assets/icons/send-white.png"
+                  alt="send"
+                  class="absolute w-3 mr-2 opacity-100 group-hover:opacity-0"
+                />
+                <img
+                  src="assets/icons/send-green.png"
+                  alt="send"
+                  class="w-3 mr-2 font-opacity-0 group-hover:opacity-100"
+                />
+                Envoyer
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-full lg:w-5/12 min-h-max max-w-lg flex flex-col justify-between text-gray-500 px-3 sm:px-14 lg:px-0"
+          >
+            <h4 class="text-white text-3xl font-bold">Coordonnées</h4>
+            <span class="block h-[2px] w-10 bg-green-500 mt-3"></span>
+            <div class="w-fit sm:pl-10 py-10 self-center lg:self-start">
+              <div
+                class="contact-item flex items-center mb-[15px] cursor-pointer"
+              >
+                <img
+                  src="assets/icons/user.png"
+                  alt="me"
+                  class="w-5 mr-5 sm:mr-10"
+                />
+                <span class="flex items-center"
+                  >Victoria Carobbi<img
+                    src="assets/icons/copy.png"
+                    alt="copy"
+                    class="w-3 ml-2"
+                /></span>
+              </div>
+              <div
+                class="contact-item flex items-center mb-[15px] cursor-pointer"
+              >
+                <img
+                  src="assets/icons/phone.png"
+                  alt="phone"
+                  class="w-5 mr-5 sm:mr-10"
+                />
+                <span class="flex items-center"
+                  >06 30 56 78 76<img
+                    src="assets/icons/copy.png"
+                    alt="copy"
+                    class="w-3 ml-2"
+                /></span>
+              </div>
+              <div
+                class="contact-item flex items-center mb-[15px] cursor-pointer"
+              >
+                <img
+                  src="assets/icons/email.png"
+                  alt="email"
+                  class="w-5 mr-5 sm:mr-10"
+                />
+                <span class="flex items-center"
+                  >victoriacarobbi@gmail.com<img
+                    src="assets/icons/copy.png"
+                    alt="copy"
+                    class="w-3 ml-2"
+                /></span>
+              </div>
+              <div
+                class="contact-item flex items-center mb-[15px] cursor-pointer"
+              >
+                <img
+                  src="assets/icons/gps.png"
+                  alt="localisation"
+                  class="w-5 mr-5 sm:mr-10"
+                />
+                <span class="flex items-center"
+                  >Montpellier<img
+                    src="assets/icons/copy.png"
+                    alt="copy"
+                    class="w-3 ml-2"
+                /></span>
+              </div>
+            </div>
+            <h4 class="text-white text-3xl font-bold">Réseaux Sociaux</h4>
+            <span class="block h-[2px] w-10 bg-green-500 mt-3"></span>
+            <div
+              class="w-full max-w-lg sm:max-w-none grid grid-cols-2 lg:grid-cols-3 sm:pl-10 pt-10"
+            >
+              <a
+                href="https://fr.linkedin.com/in/victoria-carobbi-772a261b1"
+                target="_blank"
+              >
+                <div
+                  class="group flex justify-center lg:justify-start cursor-pointer"
+                >
+                  <img
+                    src="assets/icons/linkedin-gray.svg"
+                    alt="linkedin"
+                    class="absolute w-10 opacity-100 group-hover:opacity-0"
+                  />
+                  <img
+                    src="assets/icons/linkedin-green.svg"
+                    alt="linkedin"
+                    class="absolute w-10 opacity-0 group-hover:opacity-100"
+                  />
+                </div>
+              </a>
+              <a href="https://www.instagram.com/victoria.crb/" target="_blank">
+                <div
+                  class="group flex justify-center lg:justify-start cursor-pointer"
+                >
+                  <img
+                    src="assets/icons/instagram-gray.svg"
+                    alt="intagram"
+                    class="absolute w-10 opacity-100 group-hover:opacity-0"
+                  />
+                  <img
+                    src="assets/icons/instagram-green.svg"
+                    alt="intagram"
+                    class="absolute w-10 opacity-0 group-hover:opacity-100"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ===== contact ===== -->
 
-		<div id="popup-invalid" class="fixed top-24 right-5 bg-red-900 px-6 py-4 opacity-0">
-			Formulaire invalide.
-		</div>
-		<div id="popup-confirm" class="fixed top-24 right-5 bg-green-500 px-6 py-4 opacity-0">
-			Message envoyé !
-		</div>
-		<div id="popup-error" class="fixed top-24 right-5 bg-yellow-900 px-6 py-4 opacity-0">
-			Erreur lors de l'envoi.
-		</div>
+      <!-- ===== footer ===== -->
+      <div id="footer" class="w-full py-8 px-6 border-t border-darklight mt-20">
+        <span class="text-xs sm:text-sm text-green-500"
+          >© 2024 Victoria Carobbi - developed by
+          <a href="https://marianbonhomme.com" target="_blank"
+            >Marian Bonhomme</a
+          ></span
+        >
+      </div>
+      <!-- ===== footer ===== -->
 
-		<div id="popup-copy" class="fixed top-24 right-5 bg-green-500 px-6 py-4 opacity-0">
-			Copié dans le presse-papiers.
-		</div>
+      <div
+        id="popup-invalid"
+        class="fixed top-24 right-5 bg-red-900 px-6 py-4 opacity-0"
+      >
+        Formulaire invalide.
+      </div>
+      <div
+        id="popup-confirm"
+        class="fixed top-24 right-5 bg-green-500 px-6 py-4 opacity-0"
+      >
+        Message envoyé !
+      </div>
+      <div
+        id="popup-error"
+        class="fixed top-24 right-5 bg-yellow-900 px-6 py-4 opacity-0"
+      >
+        Erreur lors de l'envoi.
+      </div>
 
-		<img id="scroll-up" src="assets/icons/scroll-up.png" alt="scroll-up" class="fixed bottom-5 right-5 w-10 cursor-pointer hover:scale-110 opacity-0">
+      <div
+        id="popup-copy"
+        class="fixed top-24 right-5 bg-green-500 px-6 py-4 opacity-0"
+      >
+        Copié dans le presse-papiers.
+      </div>
 
-	</div>
+      <img
+        id="scroll-up"
+        src="assets/icons/scroll-up.png"
+        alt="scroll-up"
+        class="fixed bottom-5 right-5 w-10 cursor-pointer hover:scale-110 opacity-0"
+      />
+    </div>
 
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	
-	<script src="assets/scripts/loader.js"></script>
-	<script src="assets/scripts/resume.js"></script>
-	<script src="assets/scripts/scroll.js"></script>
-	<script src="assets/scripts/menuMobile.js"></script>
-	<script src="assets/scripts/navigation.js"></script>
-	<script src="assets/scripts/copyText.js"></script>
-	<script src="assets/scripts/email.js"></script>
-	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
+    <script src="assets/scripts/loader.js"></script>
+    <script src="assets/scripts/resume.js"></script>
+    <script src="assets/scripts/scroll.js"></script>
+    <script src="assets/scripts/menuMobile.js"></script>
+    <script src="assets/scripts/navigation.js"></script>
+    <script src="assets/scripts/copyText.js"></script>
+    <script src="assets/scripts/email.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   </body>
 </html>
